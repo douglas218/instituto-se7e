@@ -1,4 +1,4 @@
-html, body{
+html, body, h1, h2, h3, p{
     margin: 0;
     padding: 0;
 }
@@ -12,11 +12,15 @@ body{
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 31px 62px 5px 62px;
+    padding: 2% 2% 10% 2%;
 }
-.divHeader {
-    width: 100%;
-    max-width: 400px;
+
+img.logo {
+    padding-bottom: 69.12px;
+}
+
+.divHeader h2 {
+    margin-bottom: 27px;
 }
 .header h1 {
     font-weight: normal;
@@ -25,8 +29,13 @@ body{
     letter-spacing: 0.03em;
     color: #292727;
 }
-
-.header button {
+.divHeader p {
+    width: 100%;
+    max-width: 400px;
+}
+.divHeader .divHeader-button {
+    margin-top: 52px;
+    padding: 4px 18px;
     font-weight: 500;
     font-size: 24px;
     line-height: 41px;
@@ -37,8 +46,8 @@ body{
     box-shadow: 0px 4px 20px #E55D69;
     border-radius: 8px;
     align-self: center;
-    margin: 10px 0px;
 }
+
 .divHeader .title {
     border-left: 5px solid #E55D69;
     padding-left: 20px;
@@ -48,15 +57,90 @@ body{
 }
 
 
+/*SECTION TWO _ ÀREA DE ATUAÇÃO*/
+
+.area-de-atuacao h2 {
+    text-align: center;
+    font-weight: 500;
+    line-height: 133%;
+    font-size: 36px;
+    letter-spacing: 0.15em;
+    color: #333333;
+    padding-bottom: 9px;
+
+}
+.area-de-atuacao-titulo {
+    padding: 8% 0;
+}
+hr.area-de-atuacao-linha {
+    border: 2px solid #E55D69;
+    width: 100%;
+    max-width: 650px;
+}
+.area-de-atuacao ul.ul-icon {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.area-de-atuacao .ul-icon-two {
+    padding-top: 5%;
+}
+.area-de-atuacao .ul-icon a {
+    text-decoration: none;
+}
+
+.area-de-atuacao .ul-icon p {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 41px;
+    letter-spacing: 0.03em;
+    color: #333333;
+}
+.area-de-atuacao .ul-icon span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 41px;
+    letter-spacing: 0.06em;
+    color: #E55D69;   
+}
+
+
+
+
+
+
+
+
+
 /* Mobile */
 
 @media all and (max-width: 500px) {
 
     .header {
-        padding: 31px 34px 5px 34px;
+        padding: 2% 6% 10% 6%;    
     }
     .header button {
-        font-size: 17px;
+        font-size: 17px!important;
+    }
+    .area-de-atuacao h2 {
+        font-size: 16.916px;
+    }
+    hr.area-de-atuacao-linha {
+        max-width: 305.43px;
+    }
+    .area-de-atuacao ul.ul-icon {
+        margin: 0 auto;
+        padding: 0;
+        width: 300px;
+    }
+    .area-de-atuacao .ul-icon a {
+        padding-bottom: 8%;
+    }
+    .area-de-atuacao .ul-icon a:last-child {
+        padding-bottom: 0;
     }
 
 }

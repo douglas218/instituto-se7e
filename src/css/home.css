@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, p{
+html, body, h1, h2, h3, p, ul, li{
     margin: 0;
     padding: 0;
 }
@@ -7,6 +7,7 @@ body{
     font-family: 'Rubik', sans-serif;
     font-style: normal;
 }
+
 
 .header {
     background-image: url(../img/background.png);
@@ -166,12 +167,35 @@ img.logo {
 
 
 
+@media all and (max-width: 815px) { 
 
+    /*SECTION - ÁREA DE ATUAÇÃO */
+    .area-de-atuacao, .faca-parte-da-equipe text, .conheca-a-se7e {
+        padding: 0 2% 0 2%;
+    }
+
+    .area-de-atuacao ul.ul-icon {
+        display: flex;
+        flex-direction: column;
+    }
+    .area-de-atuacao .ul-icon a {
+        padding-bottom: 5%;
+    }
+    .area-de-atuacao .ul-icon a:last-child {
+        padding-bottom: 0;
+    }
+
+
+ }
 
 /* Mobile */
 
 @media all and (max-width: 500px) {
 
+    /*SECTION - HEADER*/
+    img.logo {
+        padding: 9% 0 18% 0;
+    }
     .header {
         padding: 2% 6% 10% 6%;    
     }
@@ -184,24 +208,33 @@ img.logo {
     .linha {
         max-width: 305.43px;
     }
-    .area-de-atuacao ul.ul-icon {
-        margin: 0 auto;
-        padding: 0;
-        width: 300px;
-    }
+
+    /* SECTION TWO - ÁREA DE ATAUAÇÃO */
     .area-de-atuacao .ul-icon a {
         padding-bottom: 8%;
     }
-    .area-de-atuacao .ul-icon a:last-child {
-        padding-bottom: 0;
-    }
+
+
 
     /* SECTION THREE - FAÇA PARTE DA EQUIPE */
     .faca-parte-da-equipe.text {
         padding: 0 6% 0 6%;
     }
+    .faca-parte-da-equipe h2 {
+        margin-top: 16%;
+    }
+    .text p {
+        padding-top: 9%;
+    }
+
+
     /* SECTION FOUR - CONHEÇA A SE7E */
     .conheca-a-se7e {
         padding: 0 6% 0 6%;
+    }
+
+    /* SECTION _ FOOTER*/
+    .socialIcons {
+        padding: 12% 0 14% 0;
     }
 }
